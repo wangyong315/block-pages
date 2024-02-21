@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        height: 100vh;
+        position: relative;
+    }
+    .container .video{
+        width: 870px;
+        height: 500px;
+        background: url('./svgs/ren.png') left top/100% 100% no-repeat;
+    }
+    .container .comment{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 870px;
+        height: 500px;
+        mask-image: url('./svgs/dan.svg');
+        mask-size: cover;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="video"></div>
+        <div class="comment">mask-image - CSS：层叠样式表 - MDN Web DocsMDN Web Docshttps://developer.mozilla.org › ... › CSS：层叠样式表
+            2023年10月26日 — mask-image CSS 属性设置了用作元素蒙版层的图像。默认情况下，这意味着蒙版图像的alpha 通道将与元素的alpha 通道相乘。可以使用mask-mode 属性对此 ...
+            简单说CSS中的mask—好好利用mask-image
+            SegmentFault 思否https://segmentfault.com › ...
+            2017年11月2日 — 说明. CSS中的mask属性允许用户屏蔽或剪裁特定点的图像来实现，部分或完全隐藏某个元素的可见性。 好吧，这个概念可能有点不好理解，先看图。 图片 ...
+            css：mask-image掘金https://juejin.cn › 前端
+            2022年10月29日 — mask-image属性需要有一张png图片，这张图片遮挡在指定DOM上，图片中 透明部分 遮挡的部分将不显示；被 不透明部分 遮挡的部分将显示出来，显示的是背景 ...
+            </div>
+
+    </div>
+</body>
+</html>
